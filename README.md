@@ -40,8 +40,8 @@ Web application firewall (WAF) via Nginx v1.15.5 + SpiderLabs/ModSecurity v3 shi
 
 ## See it in action !
 
-![enter XSS](https://raw.githubusercontent.com/kjakub/docker-nginx-modsecurity-v3-waf/master/screens/screen1.png)
+![enter XSS](https://raw.githubusercontent.com/kjakub/docker-nginx-modsecurity-v3-waf/master/screens/screen11.png)
 
-![rules in action](https://raw.githubusercontent.com/kjakub/docker-nginx-modsecurity-v3-waf/master/screens/screen2.png)
+![rules in action](https://raw.githubusercontent.com/kjakub/docker-nginx-modsecurity-v3-waf/master/screens/screen22.png)
 
-![403 respose](https://raw.githubusercontent.com/kjakub/docker-nginx-modsecurity-v3-waf/master/screens/screen3.png)
+![403 respose](https://raw.githubusercontent.com/kjakub/docker-nginx-modsecurity-v3-waf/master/screens/screen33.png)
