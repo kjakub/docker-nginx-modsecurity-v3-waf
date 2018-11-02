@@ -11,13 +11,29 @@ Web application firewall (WAF) via Nginx v1.15.5 + SpiderLabs/ModSecurity v3 shi
 
 ## How to run
 
-```docker-comose up```
-```docker-comose up --build``` to rebuild 
+- ```docker-comose up```
+- ```docker-comose up --build``` to rebuild 
 
 ## Log files
+- waf/logs
 
 ## Main conf files
+- https://github.com/kjakub/docker-nginx-modsecurity-v3-waf/blob/master/waf/nginx.conf
+- https://github.com/kjakub/docker-nginx-modsecurity-v3-waf/blob/master/waf/modsecurity.conf subincluding:
+
+	- CRS rules referenced inside are downloaded from github and added to image during build included via https://github.com/kjakub/docker-nginx-modsecurity-v3-waf/blob/master/waf/modsec_includes.conf
+
+	- https://github.com/kjakub/docker-nginx-modsecurity-v3-waf/blob/master/waf/crs-setup.conf
+
+
+ 
 
 ## Fastest way to upgrade NGINX
+- update version in https://github.com/kjakub/docker-nginx-modsecurity-v3-waf/blob/master/waf/Dockerfile#L1
+- update to same version in https://github.com/kjakub/docker-nginx-modsecurity-v3-waf/blob/master/waf/build.sh#L21
 
 ## Fastest way to upgrade ModSecurity
+
+- nothing much really to upgrade just invalidate docker cache and let the image rebuild in order to have new github repos to be downloaded
+- optionally check newer branch ? https://github.com/kjakub/docker-nginx-modsecurity-v3-waf/blob/master/waf/build.sh#L9 
+- check mod security conf files against offical github repos if any changes
