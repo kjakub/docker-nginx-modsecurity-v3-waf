@@ -1,0 +1,14 @@
+version: '3.1'
+services:
+  waf:
+    build: waf
+    environment:
+      - ENV=demo
+    ports:
+        - "80:80"
+    volumes:
+      - ./waf/log:/var/log/nginx/    
+  app:
+      build: app
+      volumes:
+        - ./app/public:/usr/src/app/public
