@@ -11,7 +11,7 @@ Web application firewall (WAF) via Nginx v1.15.5 + SpiderLabs/ModSecurity v3 shi
 
 ## How to run
 
-- ```docker-comose up```
+- ```docker-comose up``` and visit [localhost](localhost) 
 - ```docker-comose up --build``` to rebuild 
 
 ## Log files
@@ -37,3 +37,5 @@ Web application firewall (WAF) via Nginx v1.15.5 + SpiderLabs/ModSecurity v3 shi
 - nothing much really to upgrade just invalidate docker cache and let the image rebuild in order to have new github repos to be downloaded
 - optionally check newer branch ? https://github.com/kjakub/docker-nginx-modsecurity-v3-waf/blob/master/waf/build.sh#L9 
 - check mod security conf files against offical github repos if any changes
+
+## See it in action !
