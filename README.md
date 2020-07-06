@@ -11,8 +11,8 @@ Web application firewall (WAF) via Nginx v1.15.5 + SpiderLabs/ModSecurity v3 shi
 
 ## How to run
 
-- ```docker-comose up``` and visit [localhost](localhost) 
-- ```docker-comose up --build``` to rebuild 
+- ```docker-compose up``` and visit [localhost](localhost) 
+- ```docker-comopse up --build``` to rebuild 
 
 ## Log files
 - waf/logs
