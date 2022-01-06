@@ -37,7 +37,7 @@ mkdir /etc/nginx/conf/
 cp /ModSecurity/unicode.mapping /etc/nginx/conf/
 
 #install crs
-git clone https://github.com/SpiderLabs/owasp-modsecurity-crs.git /usr/src/owasp-modsecurity-crs
+git clone --depth 1 --branch v3.3.2 https://github.com/coreruleset/coreruleset.git /usr/src/owasp-modsecurity-crs
 cp -R /usr/src/owasp-modsecurity-crs/rules/ /etc/nginx/conf/
 # remove example extension
 mv /etc/nginx/conf/rules/REQUEST-900-EXCLUSION-RULES-BEFORE-CRS.conf{.example,}
